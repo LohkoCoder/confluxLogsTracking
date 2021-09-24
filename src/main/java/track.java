@@ -26,7 +26,10 @@ public class track extends Thread {
         lf.setAddress(addresses);
         List<List<String>> _topics = new ArrayList<List<String>>();
         List<String> topic = new ArrayList<>();
-        topic.add("0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef");
+        topic.add("0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"); // 生成nft
+        topic.add("0xd72894c078bb3a9cbffa4ffbde230f409b952b8836c3a4a68819241664ea43ca"); // 更新nft信息
+        topic.add("0x3e3980514faa97ab243eac36e96ae46ea910dbff68a4b4f502b03d34799c7062"); // 交割nft
+        topic.add("0x6ae06889fd2c8a9a0a2df4e066c90fc6a85c215db922ec6c54f3f94ee2c209e2"); // 更新nft抵押信息
         _topics.add(topic);
         lf.setTopics(_topics);
         try {
